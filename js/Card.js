@@ -12,7 +12,7 @@ function Card(id, name, bootcamp_kanban_column_id) {
 		var cardRenameBtn = $('<button class="btn-rename-card">edit card</button>');
 		var cardDescription = $('<p class="card-description"></p>');
 		
-		cardDeleteBtn.on.('click', function(){
+		cardDeleteBtn.on('click', function(){
 			self.removeCard();
 		});
 
