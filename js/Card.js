@@ -1,4 +1,3 @@
-// KLASA KANBAN CARD
 function Card(id, name, bootcamp_kanban_column_id) {
 	var self = this;
 	
@@ -13,11 +12,11 @@ function Card(id, name, bootcamp_kanban_column_id) {
 		var cardRenameBtn = $('<button class="btn-rename-card">edit card</button>');
 		var cardDescription = $('<p class="card-description"></p>');
 		
-		cardDeleteBtn.click(function(){
+		cardDeleteBtn.on.('click', function(){
 			self.removeCard();
 		});
 
-		cardRenameBtn.click(function(event) {
+		cardRenameBtn.on('click', function(event) {
 			var newCardTitle = prompt('Enter new the name of card');
 			event.preventDefault();
 			$.ajax({

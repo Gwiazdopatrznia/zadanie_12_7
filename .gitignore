@@ -1,3 +1,8 @@
+#CSS
+.sass-cache
+css
+*.css
+
 # Logs
 logs
 *.log
